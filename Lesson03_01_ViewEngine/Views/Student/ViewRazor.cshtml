@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "ViewRazor";
+}
+
+<h1>ViewRazor</h1>
+@*biến*@
+
+@{ 
+    var Names = "Chung Trịnh";
+    int Age = 45;
+}
+<hr />
+<h2>Thông tin cá nhân</h2>
+<p>Name: @Names</p>
+<p>Age: @Age</p>
+<hr />
+<h2>Sử dụng cấu trúc lặp for</h2>
+@for (int i = 0; i < 10; i++)
+{
+    <p> Số thứ: @i</p>
+}
+<h2>
+    Khai báo biến mảng <br />
+    Sử dụng vòng lặp foreach để hiển thị
+</h2>
+@{ 
+    string[] str = { "Chiến", "Hiếu", "Hùng", "Hạu" };
+}
+@foreach (var item in str)
+{
+    <p>Xin chào: @item</p>
+}

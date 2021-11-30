@@ -69,3 +69,4 @@ E:\Drive_0\1 [07]\Devmaster.edu.vn\DEV2111NETMVC\Lab01\obj\Debug\Lab01.csproj.Co
 E:\Drive_0\1 [07]\Devmaster.edu.vn\DEV2111NETMVC\Lab01\obj\Debug\Lab01.csproj.CopyComplete
 E:\Drive_0\1 [07]\Devmaster.edu.vn\DEV2111NETMVC\Lab01\obj\Debug\Lab01.dll
 E:\Drive_0\1 [07]\Devmaster.edu.vn\DEV2111NETMVC\Lab01\obj\Debug\Lab01.pdb
+E:\Drive_0\1 [07]\Devmaster.edu.vn\DEV2111NETMVC\Lab01\obj\Debug\Lab01.csprojAssemblyReference.cache
