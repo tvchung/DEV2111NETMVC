@@ -1,0 +1,67 @@
+﻿@using Lesson04_01.Models
+@model List<Customer>
+@{
+    ViewBag.Title = "Danh sách khách hàng";
+    //var list = ViewBag.list as List<Customer>;
+    var list = Model as List<Customer>; // Model chứ không phải model
+    var stt = 0;
+}
+
+<h2>Danh sách khách hàng</h2>
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>STT</th>
+            <th>Họ và tên</th>
+            <th>Địa chỉ</th>
+            <th>Năm sinh</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in list)
+        {
+            stt++;
+            <tr>
+                <td>@stt</td>
+                <td>@item.FirstName @item.LastName</td>
+                <td>@item.Address</td>
+                <td>@item.YearOfBirth</td>
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <th colspan="4">Tổng số có <b style="color:red"> @stt </b> khách hàng </th>
+        </tr>
+    </tfoot>
+</table>
+<hr />
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>STT</th>
+            <th>Họ và tên</th>
+            <th>Địa chỉ</th>
+            <th>Năm sinh</th>
+        </tr>
+    </thead>
+    <tbody>
+        @*@model List<Customer>*@
+        @{ stt = 0;}
+        @foreach (var item in Model)
+        {
+            stt++;
+            <tr>
+                <td>@stt</td>
+                <td>@item.FirstName @item.LastName</td>
+                <td>@item.Address</td>
+                <td>@item.YearOfBirth</td>
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <th colspan="4">Tổng số có <b style="color:red"> @stt </b> khách hàng </th>
+        </tr>
+    </tfoot>
+</table>

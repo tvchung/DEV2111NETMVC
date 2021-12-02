@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Thông tin chi tiết của khách hàng";
+    var customer = ViewBag.Customer as Lesson04_01.Models.Customer;
+}
+
+<h2>Thông tin chi tiết của khách hàng</h2>
+<p>Mã số: @customer.CustomerId</p>
+<p>Họ và tên:
+       @customer.FirstName  &nbsp; @customer.LastName
+</p>
+<p>
+    Address: @customer.Address
+</p>
+<p>Năm sinh: @customer.YearOfBirth</p>
+<hr />
